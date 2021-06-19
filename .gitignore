@@ -1,4 +1,6 @@
-**/logs/
-**/graphs/
+outputs/logs/*
+outputs/graphs/*
+!outputs/graphs/.keep
+!outputs/logs/.keep
 __pycache__/*
 .idea/*
