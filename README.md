@@ -1,6 +1,6 @@
 ![PCTB Logo](./images/logos/pctb-logo-128.png "PCTB Logo") 
 
-#PCTB - Python Crypto Trading Bot (v1.0)
+# PCTB - Python Crypto Trading Bot (v1.0)
 ___
 
 This [repository](https://github.com/yzgastk/python_crypto_trading_bot), contains a trading bot written in python (v3.8) for Binance. It is distributed under GPLv3.0 licence.
