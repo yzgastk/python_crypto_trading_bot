@@ -1,0 +1,4 @@
+**/logs/
+**/graphs/
+__pycache__/*
+.idea/*
