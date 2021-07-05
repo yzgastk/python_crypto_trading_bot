@@ -73,6 +73,15 @@ def moving_atr_stop_loss(kline_frame, order, current_price, atr_length=14, atr_m
     return
 
 
+	def discord_strat_01(symbol, wallet, current_price, buy_limit, sell_limit, amount=100):
+		if current_price <= buy_limit:
+			wallet.push_order(symbol, Orders.Orders.LONG, amount)
+		elif current_price >= sell_limit:
+			waller.exit_order(symbol)
+
+		return
+
+
 def main():
     import Klines as Kl
     import Wallets

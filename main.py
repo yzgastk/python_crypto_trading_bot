@@ -102,8 +102,7 @@ def main():
             kline_dict[symbol].update_klines()
 
             # Applying strategeis
-            strat.sar_strategy(symbol, kline_dict[symbol].get_kline_frame(), paper_wallet, amount=2000.0)
-            strat.golden_cross(symbol, kline_dict[symbol].get_kline_frame(), paper_wallet, ma_type="sma", fast_ma=2, slow_ma=5, amount=1000.0)
+            strat.discord_strat_01(symbol, paper_wallet, kline_frame.close[-1], 30000.0, 35000.0, 100.0)
 
         time_delta = timeframe_to_sec[args.timeframe] - (
                     int(datetime.datetime.now().strftime('%s')) % timeframe_to_sec[args.timeframe])
