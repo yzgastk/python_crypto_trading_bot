@@ -8,12 +8,19 @@ It provides a framework to test strategies on live data in a fully controllable 
  and to be able to paper trade before going live.
 
 ## Install
+### *nix based
 First, check that you have the following dependencies installed:
 - [TA-Lib](https://mrjbq7.github.io/ta-lib/) (not mandatory)
 - pip dependencies : `pip3 install -r requirements.txt`
 
 Then, download or git clone the project, and you are ready to go!
+### Dockerfile
+You can also use the Dockerfile to build a working container. First, go inside the project folder, then :
+`sudo docker build -t pctb:Dockerfile .`
 
+Then you can work inside the container using : `sudo docker run -it pctb:Dockerfile`. It will get you inside the project folder.
+
+You can use `python3 main.py` to see if everything is working correctly.
 ## Usage
 Run the script with `python3 main.py` and the basic example should start. The script can take the following arguments:
 - -t, --timeframe: The timeframe  (type: string | default: "15m")
